@@ -1,0 +1,22 @@
+p,h1,.form{
+    width : 50%;
+    margin: 30px auto;
+    padding: 10px;
+}
+button{
+    margin-left: 320px;
+}
+h1{
+    text-align: center;
+}
+p{
+    word-spacing: 2px;
+    line-height: 20px;
+}
+.lastResult{
+    color: white;
+}
+input[type="text"]{
+    margin-right: 20px;
+    margin-left:  20px;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Registration Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Employee Registration Portal</h1>
+        <form novalidate>
+            <table id="personal-details">
+                <caption>Personal Details</caption>
+                <tbody>
+                    <tr>
+                        <td class="labels">First Name : </td>
+                        <td><input type="text" class="inputFeild" name="fName" placeholder="First Name"></td>
+                    </tr>
+                    <tr>
+                        <td class="labels">Last Name : </td>
+                        <td><input type="text" class="inputFeild" name="lName" placeholder="Last Name"></td>
+                    </tr>
+                    <tr>
+                        <td class="labels">Gender : </td>
+                        <td>
+                            <input type="radio" class="inputFeild" name="gender" value="M" />Male
+                            <input type="radio" class="inputFeild" name="gender" value="F" />Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="labels">Email : </td>
+                        <td><input type="email" class="inputFeild" name="email" placeholder="Your Email"></td>
+                    </tr>
+                    <tr>
+                        <td class="labels">Mobile N0. : </td>
+                        <td><input type="tel" class="inputFeild" name="mobile" placeholder="Mobile Number"></td>
+                    </tr>
+                    <tr>
+                        <td class="labels">Address : </td>
+                        <td><textarea rows="2" placeholder="Residential Address"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="labels">Password : </td>
+                        <td><input type="password" class="inputFeild" placeholder="Password" name="password"></td>
+                    </tr>
+                    <tr>
+                        <td class="labels">Confirm Password : </td>
+                        <td><input type="password" name="confirmPassword" placeholder="Re-enter Password"></td>
+                    </tr>
+                    <tr><td class="next" colspan="2"><button id="personalDetails" type="button">Next</button></td></tr>   
+                </tbody>              
+            </table>
+            <table id="academic-details">
+                <caption>Academic Details</caption>
+                <thead>
+                    <tr><th></th>
+                        <th class="columnName">Total Marks</th>
+                        <th class="columnName">Marks Obtained</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="labels">SSC : </td>
+                        <td><input type="number" class="inputFeild" name="sscTotalMarks"></td>
+                        <td><input type="number" class="inputFeild" name="sscMarkObtained"></td>
+                    </tr>
+                    <tr>
+                        <td class="labels">HSC : </td>
+                        <td><input type="number" class="inputFeild" name="hscTotalMarks"></td>
+                        <td><input type="number" class="inputFeild" name="hscMarkObtained"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="checkbox" id="diploma" name="diploma">Diploma</td>
+                    </tr>
+                    <tr id="diplo">
+                        <td class="labels">Diploma : </td>
+                        <td><input type="number" class="inputFeild" name="diploTotalMarks"></td>
+                        <td><input type="number" class="inputFeild" name="diploMarkObtained"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="checkbox" id="graduation" name="graduation">Graduation</td>
+                    </tr>
+                    <tr id="grade">
+                        <td class="labels">Graduation : </td>
+                        <td><input type="number" class="inputFeild" name="gradTotalMarks"></td>
+                        <td><input type="number" class="inputFeild" name="gradMarkObtained"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="checkbox" id="postGraduation" name="postGraduation">Post Graduation</td>
+                    </tr>
+                    <tr id="pGrade">
+                        <td class="labels">Post Graduation : </td>
+                        <td><input type="number" class="inputFeild" name="pGradTotalMarks"></td>
+                        <td><input type="number" class="inputFeild" name="pGradMarkObtained"></td>
+                    </tr>
+                    <tr><td class="next" colspan="3"><button id="academicDetails" type="button">Next</button></td></tr>   
+                </tbody>              
+            </table>
+            <table id="skills">
+                <caption>Your Skills</caption>
+                <tbody>
+                    <tr>
+                        <td class="labels">Skills : </td>
+                        <td><textarea rows="2" class="inputFeilds"></textarea></td>
+                    </tr>
+                    <tr><td class="next" colspan="2"><button id="skill" type="button">Next</button></td></tr>   
+                </tbody>              
+            </table>
+            <table id="experience">
+                <caption>Experience</caption>
+                <thead>
+                    <tr>
+                        <th>Company Name</th>
+                        <th>Years</th>
+                        <th>Project Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" name="companyName" placeholder="Company Name"></td>
+                        <td><input type="number" name="yearsExp" placeholder="Years Of Experience"></td>
+                        <td><input type="text" name="projectTitle" placeholder="Project Title"></td>
+                    </tr>
+                    <tr><td class="next" colspan="3"><button type="Submit">Register</button></td></tr>   
+                </tbody>              
+            </table>
+        </form>
+
+        <script src="./script/myScript.js"></script>
+    </body>
+</html>

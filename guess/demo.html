@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tab-Index</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .output{
+                width: 50%;
+                border: 2px solid ;
+                border-radius: 10px;
+                margin: 20px auto;
+                background-color: #ffff00;
+            }
+            input{
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+            <div class="output">
+                
+                <input type="text">
+                <button>Search</button>
+
+                <ul>
+                    
+                </ul>
+
+                <!--Needed for 6th problem-->
+                <!--<p></p>-->  
+            </div>
+
+        <script>
+            /*                         1. FizzBuzz Problem
+            for(var i=0;i<10;i++)
+            {
+                var number = prompt("Enter number ");
+                if((number%3) == 0 && (number%5) == 0)
+                    alert("fizz buzz");
+                else if((number % 3) == 0)
+                    alert("fizz");
+                else if((number%5) == 0)
+                    alert("buzz");
+                else 
+                    alert("not divisible by 3 or 5");
+            }
+            */
+            
+            /*                          2. Sorting 
+            var list = document.querySelector(".output ul");
+            list.innerHTML = " ";
+            var greetings = ["Happy Birthday","Merry Christmas my love",
+                            "A happy Christmas to all the family","You\'re all I want for Christmas",
+                            "Get well soon"];
+
+            for(var i=0;i < greetings.length ; i++)
+            {
+                var input = greetings[i];
+                if(greetings[i].indexOf("Christmas") !== -1)
+                {
+                    var result = input;
+                    var listItem = document.createElement("li");
+                    listItem.textContent = result;
+                    list.appendChild(listItem);
+                }
+            }
+            */
+
+            /*                          3. Capitalization Formatting
+            var list = document.querySelector(".output ul");
+            list.innerHTML = " ";
+            var cities = ["lonDon","ManCHESTer","BiRmiNGHAM","liVERpoOL","adam"];
+
+            for(var i=0 ; i < cities.length ;i++)
+            {
+                var inputValue = cities[i].toLowerCase();
+                var first = inputValue.slice(0,1);
+                var firstUpper = first.toUpperCase();
+                inputValue = inputValue.replace( first , firstUpper );                
+                var listItem = document.createElement("li");
+                listItem.textContent = inputValue;
+                list.appendChild(listItem);
+            }
+            */
+
+            /*                          4. Seperating Station Code and Station Name
+            var list = document.querySelector(".output ul");
+            list.innerHTML = " ";
+            var stations = ["MAN675847583748sjt567654;Manchester Piccadilly","GNF576746573fhdg4737dh4;Greenfield",
+                            "LIV5hg65hd737456236dch46dg4;Liverpool Lime Street","SYB4f65hf75f736463;Stalybridge",
+                            "HUD5767ghtyfyr4536dh45dg45dg3;Huddersfield"];
+
+            for(var i=0 ; i < stations.length ; i++)
+            {
+                var inputStation = stations[i];
+                var stationCode = inputStation.slice(0,3);
+                var stationName = inputStation.slice(inputStation.indexOf(";")+1);
+
+                var listItem = document.createElement("li");
+                listItem.textContent = stationCode +": " + stationName;
+                list.appendChild(listItem);
+            }
+            */
+
+            /*                          5. Example for split() and join()
+            var mydata = " London, New York, Spain, Argentina, Brazil, Germany";
+            var arr = mydata.split(",");
+            var list = document.querySelector(".output ul");
+            for(var i=0 ; i < arr.length ; i++)
+            {
+                var listItem = document.createElement("li");
+                listItem.textContent = arr[i];
+                list.appendChild(listItem);
+            }
+            var string = arr.join(";");
+            console.log(string);
+            */
+
+            /*                          6. Invoice and totalling through string
+            var list = document.querySelector(".output ul");
+            var result = document.querySelector(".output p");
+            result.style.margin = "20px";
+            var total = 0;
+            list.innerHTML = " ";
+            result.innerHTML = " ";
+            var products = ['Underpants:6.99','Socks:5.99','T-shirt:14.99','Trousers:31.99','Shoes:23.99'];
+            for(var i=0 ; i < products.length ; i++)
+            {
+                var subArray = products[i].split(":");
+                var name = subArray[0];
+                var price = Number(subArray[1]);
+                total += price;
+                name = name + " - $ "+price;
+
+                var listItem = document.createElement("li");
+                listItem.textContent = name;
+                list.appendChild(listItem);
+            }
+            result.textContent = "Total Price : $ "+total.toFixed(2);
+            */
+
+            /*
+            var list = document.querySelector(".output ul");
+            var searchText = document.querySelector(".output input");
+            var button = document.querySelector(".output button");
+            list.innerHTML = " ";
+            var myHistory = [];
+            button.onclick = function(){
+                if(searchText !== " ")
+                    myHistory.unshift(searchText.value);
+
+                list.innerHTML = " ";
+                for(var i=0 ; i < myHistory.length ; i++)
+                {
+                    var listItem = document.createElement("li");
+                    listItem.textContent = myHistory[i];
+                    list.appendChild(listItem);
+                }
+
+                if(myHistory.length >= 5)
+                    myHistory.pop();
+
+                searchText.value = " ";
+                searchText.focus();
+            }
+            */
+
+        </script>
+    </body>
+</html>

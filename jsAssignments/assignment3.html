@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Assignment 3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            label{
+                margin-left: 100px;
+                margin-right: 10px;
+            }
+            button{
+                display: block;
+                margin-top: 20px;
+                margin-left: 150px;
+            }
+            p{
+                margin-top: 20px;
+                margin-left: 100px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <label>Number 1</label><input type="text">
+        <button onclick="dash()">Insert Dash</button>
+        <p></p>
+
+        <script>
+            
+            function dash()
+            {
+                var num = Number(document.querySelector("input").value);
+                var digit =" ";
+                var flag = false;
+                if(num < 0)
+                {    
+                    num = -1*num;
+                    flag = true;
+                }
+                while(num > 0)
+                {
+                    var firstNumber = num%10;
+                    num = Math.floor(num/10);
+                    var secondNumber = num%10;
+                    if(firstNumber > 0 && secondNumber <= 0 && flag == true)
+                        firstNumber = "-" + firstNumber;
+                    if((firstNumber%2 != 0) && (secondNumber%2 != 0))
+                        digit = "-"+firstNumber+digit;
+                    else
+                        digit = firstNumber+digit;
+                }
+                alert(digit);
+            }
+            
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+body{
+  background: url("../images/background-image.jpg") no-repeat 0px 0px / cover;
+  color: #fff;
+  font-size: 16px;
+  position: relative;
+}
+h1{
+  text-align: center;
+}
+span{
+  display: inline-block;
+  width: 150px;
+  height: 30px;
+  vertical-align: bottom;
+  color: #000;
+  border: 2px solid #888888;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 5px 20px;
+  margin-left: 50px;
+  background: #fff;
+}
+label{
+  display: inline-block;
+  width: 18%; 
+  font-style: italic;
+}
+#error-area{
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  width: 35%;
+  font: italic 20px arial;
+  background: #fff;
+  box-sizing: border-box;
+  margin: 0px;
+  display: none;
+  padding:30px;
+  text-align: center;
+  border-radius: 10px;
+  color: #ff0000;
+}
+.textarea-align{
+  vertical-align: top;
+}
+.row{
+  margin: 20px ;
+}
+input,textarea{
+  margin-left: 10px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 10px #888888;
+  font: bold 12px arial;
+  padding: 5px;
+  color: #0000ff;
+  width: 180px;
+}
+input[type="radio"] , input[type="checkbox"]{
+  width: auto;
+  margin-left: 30px;
+  box-shadow: none;
+}
+input[type="checkbox"]{
+  margin-left: 10px;
+  padding-left: 20px;
+}
+input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"]{
+  -moz-appearance: textfield;
+}
+button{
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  box-shadow: 2px 3px 10px #888888;
+  background-color:#0000ff;
+  color: #fff; 
+  margin: 30px ;
+  font-size: 20px;
+}
+form{
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px; 
+  box-sizing: border-box;
+}
+fieldset{
+  border: none;
+  text-align: right;
+}
+.contentInfo{
+  padding: 20px;
+  border: 2px solid #888888;
+  border-radius: 10px;
+}
+.right{
+  margin-left: 70px;
+} 
+.middle{
+  padding: 0px 0px 0px 210px;
+}
+.align{
+  margin-left: 40px;
+}
+.dAlign{
+  margin-left: 43px;
+}
+.check{
+  width: 15%;
+}
+.left{
+  margin-left: 100px;
+}
+.right-align{
+  margin-left: 100px;
+}

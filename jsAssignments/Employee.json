@@ -1,0 +1,33 @@
+{
+    "employee" :
+    [   
+        {
+            "empId":"11111",
+            "firstName":"Aayush",
+            "lastName":"Thakur",
+            "address":"Karve Nagar",
+            "mobile":"8878825993"
+        },
+        {
+            "empId":"22222",
+            "firstName":"John",
+            "lastName":"Pitt",
+            "address":"San-Francisco",
+            "mobile":"8432942342"
+        },
+        {
+            "empId":"33333",
+            "firstName":"Golem",
+            "lastName":"Kumar",
+            "address":"London",
+            "mobile":"2234123556"
+        },
+        {
+            "empId":"44444",
+            "firstName":"Sam",
+            "lastName":"Khurana",
+            "address":"Mumbai",
+            "mobile":"9993555982"
+        }
+    ]
+}

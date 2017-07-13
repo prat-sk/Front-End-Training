@@ -1,0 +1,14 @@
+body{
+    font-family: ubuntu medium;
+    width: 90%;
+    margin: 0px auto;
+}
+
+body h1{
+    text-align: center;
+}
+
+img{
+    width: 90%;
+    margin: 0 60px;
+}

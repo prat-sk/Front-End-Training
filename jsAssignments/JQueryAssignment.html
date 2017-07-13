@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQuery Assignment(JSON)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> 
+        </script>
+        <style>
+            table{
+                font-size: 15px;
+                border: 2px solid black;
+            }
+            th,td{
+                text-align: center;
+                padding: 5px;
+                border: 1px solid grey;
+            }
+            td{
+                color:blue;
+            }
+            #table{
+                margin:0px auto;
+            }
+            button{
+                text-align: center;
+            }
+            input{
+                border-radius: 0px;
+                border: none;
+                width: 100px;
+                height: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Emp-Id</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Address</th>
+                    <th>Mobile-No</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">
+                        <button id="edit">Edit</button>
+                        <button id="save">Save</button>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+        <script>
+            $(function () {
+                $.getJSON("Employee.json",function (emp) {
+                    $.each(emp.employee,function(i,obj){
+                        var tRow =
+                            "<tr>"+
+                            "<td><input disabled='true' value="+obj.empId+" ></td>"+
+                            "<td><input disabled='true' value="+obj.firstName+"></td>"+
+                            "<td><input disabled='true' value="+obj.lastName+"></td>"+
+                            "<td><input disabled='true' value="+obj.address+"></td>"+
+                            "<td><input disabled='true' value="+obj.mobile+"></td>"+
+                            "</tr>";
+                        $('#table tbody').append(tRow);
+                    })
+                })
+            })
+
+            $("#edit").on("click",function () {
+                $("input").prop("disabled",false);
+                $("#edit").hide();
+            })
+
+            $("#save").on("click",function(){
+                employee = [];
+                $("tbody tr").each(function(i,v){
+                    employee[i] = {};
+                    $(this).children("td").each(function(j,val){
+                        employee[i][j] = $(this).children("input").val();
+                    });
+                })
+                console.log(employee);
+                $("input").prop("disabled",true);
+                $("#edit").show();
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,526 @@
+html {
+    font-size: 9px;
+}
+
+body {
+    font: 1rem arial, helvetica, sans-serif;
+}
+
+.container {
+    width: 90%;
+    padding: 0px 0px 20px;
+    margin: 0px auto;
+    border-bottom: 2px solid #dadada;
+}
+
+h2 {
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.left-panel {
+    padding: 20px 0px 0px;
+}
+
+.navigation_bar {
+    border-bottom: 1px solid #dadada;
+    padding: 0px 0px 10px;
+}
+
+.navigation_bar a {
+    display: inline-block;
+    width: 19%;
+    font-style: italic;
+    padding-left: 5px;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    color: #4e9183;
+}
+
+.navigation_bar a:hover, section a:hover, footer a:hover, .carousel_links a:hover, .conversations a:hover {
+    color: #ec6b3c;
+}
+
+.blog {
+    padding-left: 10px;
+}
+
+.logo {
+    margin: 20px auto;
+    background: url("../images/Logo.png") no-repeat -1px -41px;
+    background-size: cover;
+    width: 80px;
+    border-radius: 50%;
+    height: 80px;
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    padding: 0px 0px 10px;
+    border-bottom: 1px dashed #dadada;
+}
+
+.carousel_links a {
+    display: none;
+    width: 25%;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    background-color: #eff8f7;
+    padding: 10px;
+    color: #4e9183;
+}
+
+.image_slider {
+    list-style: none;
+    width: 400%;
+    position: relative;
+    overflow: hidden;
+    animation: carouselAnimation 20s linear infinite;
+}
+
+.image_slider li {
+    width: 25%;
+    position: relative;
+    float: left;
+}
+
+.image_slider li h2 {
+    width: 100%;
+    color: #000;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 35px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.image_slider li h3 {
+    width: 100%;
+    color: #fff;
+    padding: 5px 10px;
+    bottom: 15px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.image_slider li p {
+    color: #4e9183;
+    font-size: 0.6rem;
+    margin-top: 10px;
+    padding-right: 10px;
+    text-align: right;
+}
+
+.carousel img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+@keyframes carouselAnimation {
+    0%, 24% {
+        left: 0;
+    }
+    25%, 49% {
+        left: -100%;
+    }
+    50%, 74% {
+        left: -200%;
+    }
+    75%, 100% {
+        left: -300%;
+    }
+}
+
+.sign_up {
+    padding: 15px 0px;
+    border-bottom: 1px dashed #dadada;
+}
+
+.sign_up:after, footer:after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+.image_mail {
+    margin-left: 10px;
+    float: left;
+    width: 12%;
+    height: 30px;
+    background: url("../images/Mail.png") no-repeat;
+}
+
+.sign_up p {
+    font: italic 0.9rem/1.5 arial;
+    width: 80%;
+    float: left;
+    padding: 0px 0px 10px 10px;
+}
+
+.sign_up input {
+    border: 1px solid;
+    border-color: #979797 #dadada #dadada;
+    font-size: 0.9rem;
+    padding: 2px;
+    margin-left: 11px;
+}
+
+.sign_up button {
+    font-size: 0.9rem;
+    padding: 2px 7px;
+    border-radius: 3px;
+    border: 1px solid;
+    border-color: #aaa7a7 #aaa7a7 #979797;
+    margin-left: 10px;
+}
+
+article {
+    width: 90%;
+    margin: 0px auto;
+}
+
+section {
+    margin-top: 20px;
+}
+
+section img {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #dadada;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+section a {
+    font: 0.9rem bold;
+    color: #34b3c1;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+section p {
+    margin-top: 10px;
+    font: italic 0.8rem/1.3 arial;
+    word-spacing: 1.3px;
+}
+
+.bottom_link {
+    margin: 10px 0px;
+}
+
+.bottom_link label {
+    color: #888888;
+    font-size: 0.8rem;
+}
+
+.bottom_link a {
+    border-bottom: 1px dashed #dadada;
+}
+
+footer {
+    width: 90%;
+    margin: 20px auto;
+    font-size: 0.7rem
+}
+
+footer a {
+    font-size: 0.7rem;
+    color: #34b3c1;
+    text-decoration: none;
+}
+
+footer span {
+    color: #dadada;
+}
+
+footer label {
+    display: block;
+    color: #888888;
+}
+
+.reference_links {
+    float: left;
+}
+
+.mediaLinks {
+    float: right;
+}
+
+.mediaLogo {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.facebook {
+    background: url("../images/mediaicons.jpg") -318px 261px;
+}
+
+.facebook:hover {
+    background: url("../images/mediaicons.jpg") -34px 259px;
+}
+
+.twitter {
+    background: url("../images/mediaicons.jpg") -359px 260px;
+}
+
+.twitter:hover {
+    background: url("../images/mediaicons.jpg") -73px 260px;
+}
+
+.rss {
+    background: url("../images/mediaicons.jpg") -396px 59px;
+}
+
+.rss:hover {
+    background-image: url("../images/mediaicons.jpg") -112px 59px;
+}
+
+aside {
+    display: none;
+}
+
+@media only screen and (min-width:768px)
+/* CSS for Tablet */
+
+{
+    html {
+        font-size: 15px;
+    }
+    .logo {
+        background-position: -1px -62px;
+        width: 120px;
+        height: 120px;
+        margin-top: 10px;
+        float: left;
+    }
+    .navigation_bar {
+        border: none;
+        margin-top: 30px;
+        width: 70%;
+        float: right;
+    }
+    .navigation_bar a {
+        height: 55px;
+        padding-top: 55px;
+    }
+    .tastemaker {
+        background: url("../images/tastemaker.png") no-repeat 23px -112px;
+    }
+    .blog {
+        background: url("../images/blog.png") no-repeat 23px -112px;
+    }
+    .list {
+        background: url("../images/list.png") no-repeat 23px -112px;
+    }
+    .contribute {
+        background: url("../images/contribute.png") no-repeat 23px -112px;
+    }
+    .about {
+        background: url("../images/about.png") no-repeat 23px -112px;
+    }
+    .move_image:hover {
+        background-position-y: -105px;
+    }
+    .left-panel:after, .carousel_links:after {
+        clear: both;
+        display: table;
+        content: "";
+    }
+    .image_slider li h2, .image_slider li h3 {
+        padding: 10px 20px;
+        width: auto;
+    }
+    .image_slider li h2 {
+        bottom: 110px;
+        background-color: rgba(255, 255, 255, 1);
+    }
+    .image_slider li h3 {
+        bottom: 72px;
+        background-color: rgba(0, 0, 0, 1);
+        ;
+    }
+    .right_aligned {
+        right: 0px;
+    }
+    .image_mail {
+        height: 50px;
+        width: 6%;
+        margin-left: 20px;
+        background-size: 80%;
+    }
+    .sign_up p {
+        font-size: 0.8rem;
+        width: 40%;
+    }
+    .sign_up input, .sign_up button {
+        margin-top: 3px;
+        padding: 4px;
+    }
+    article {
+        width: 100%;
+    }
+    section {
+        width: 24%;
+        word-wrap: break-word;
+        margin-left: 3px;
+        display: inline-table;
+    }
+    .carousel {
+        padding-bottom: 20px;
+    }
+    .carousel_links a {
+        float: left;
+        display: block;
+        border-right: 1px solid #dadada;
+    }
+    .carousel_links a label {
+        display: none;
+    }
+    .carousel_links a:hover {
+        background: #d9efec;
+    }
+    .image_slider li p {
+        position: absolute;
+        right: 10px;
+        bottom: 20px;
+        background-color: rgba(218, 218, 218, 0.8);
+        color: #000;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (min-width:1024px)
+/* CSS for Desktop */
+
+{
+    html {
+        font-size: 16px;
+    }
+    .container {
+        margin-top: 50px;
+    }
+    .left-panel {
+        width: 20%;
+        position: relative;
+        float: left;
+    }
+    .logo {
+        width: 150px;
+        height: 150px;
+        background-position: -1px -78px;
+        position: absolute;
+        top: 0px;
+        left: 20px;
+    }
+    .right-panel {
+        width: 78%;
+        float: left;
+        margin-left: 10px;
+    }
+    .container:after {
+        clear: both;
+        display: table;
+        content: "";
+    }
+    .navigation_bar {
+        width: 100%;
+        margin-top: 160px;
+        float: left;
+    }
+    .navigation_bar a {
+        display: block;
+        text-align: left;
+        padding: 20px 0px 0px 80px;
+        width: 100%
+    }
+    .navigation_bar a:hover {
+        background-position: 30px -111px;
+    }
+    .image_mail {
+        height: 40px;
+        background-size: 70%;
+    }
+    .sign_up p {
+        width: 50%;
+    }
+    .sign_up input {
+        width: 22%;
+    }
+    .sign_up button {
+        width: 10%;
+    }
+    .carousel_links a {
+        border-right: 1px solid #dadada;
+        padding: 20px;
+        text-align: left;
+        font-size: 1.2rem;
+    }
+    .carousel_links a label {
+        display: block;
+        font: italic 0.6rem arial;
+    }
+    .mediaLogo {
+        width: 30px;
+        height: 30px;
+    }
+    .facebook {
+        background: url("../images/mediaicons.jpg") -313px 264px;
+    }
+    .facebook:hover {
+        background: url("../images/mediaicons.jpg") -28px 265px;
+    }
+    .twitter {
+        background: url("../images/mediaicons.jpg") -352px 264px;
+    }
+    .twitter:hover {
+        background: url("../images/mediaicons.jpg") -68px 265px;
+    }
+    .rss {
+        background: url("../images/mediaicons.jpg") -391px 64px;
+    }
+    .rss:hover {
+        background: url("../images/mediaicons.jpg") -107px 64px;
+    }
+    aside {
+        margin: 510px 0px 0px 30px;
+        width: 70%;
+        display: block;
+    }
+    aside h4 {
+        font: bold 0.8rem arial;
+        padding-bottom: 10px;
+        margin: 20px 0px;
+        border-bottom: 1px dashed #dadada;
+    }
+    aside p {
+        margin-top: 10px;
+        font: italic 0.7rem/1.8 arial;
+        word-spacing: 1px;
+    }
+    .conversations {
+        border: 1px solid #dadada;
+        border-radius: 4px;
+        color: #34b3c1;
+        font: italic 0.7rem arial;
+        text-decoration: none;
+        padding: 5px 20px 5px 30px;
+    }
+    .tweeterLogo {
+        background: url("../images/tweeter.png") no-repeat 8% 45%/13px;
+    }
+    .fbLogo {
+        background: url("../images/facebook.png") no-repeat 8% 45%/14px;
+    }
+}

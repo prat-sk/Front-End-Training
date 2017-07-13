@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Assignment 4</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        
+        <script>
+            function sumOfNumbers()
+            {
+                var sum = 0;
+                var flag = false;
+                for(var i=0;i<arguments.length;i++)
+                {
+                    console.log(arguments[i]);
+                    if(typeof(arguments[i]) === "number" && !isNaN(arguments[i]))
+                        sum += arguments[i];
+                    else
+                    {
+                        flag = true;
+                        break;
+                    }
+                }
+                if(flag === true)
+                    alert("False");
+                else
+                    alert("Sum  =  "+sum);
+            }
+
+            //sumOfNumbers(1,2,3,4,5);
+            //sumOfNumbers(2,4,6,8,10);
+            //sumOfNumbers(1,2,3,4,NaN);
+            //sumOfNumbers(1,2,"Alex","John");
+        </script>
+    </body>
+</html>

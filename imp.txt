@@ -1,0 +1,194 @@
+- SASS
+
+>> Nesting
+>> Mixin - same as functions.
+>> Variable
+>> Inheritance
+>> Operators
+>> Importing of files
+
+
+
+
+1) download ruby
+2) download gem
+3) install compass
+4) install SASS
+5) sass --watch style.scss:style.css        //command to make css file updated with scss.
+
+
+
+- &:hover for pseudo classes.
+
+
+- VARIABLES :-
+
+>> $buttonColor : #fff;
+>> h1{
+        color : $buttonColor;
+    }
+
+
+- MIXIN :-
+ It works same as functions for executing multiple lines of code.
+
+ >> Declaration
+ @mixin property ($Variable){
+     //TODO
+ }
+
+>> Calling
+@include property(value);
+
+
+- INHERITANCE :-
+
+@extends
+
+
+- OPERATORS :-
+
+>> basic mathematical operations can be performed.
+
+
+- IMPORT :-
+
+>> _partial.scss    // _ specifies that compass need not to interpret it before main file.
+>> @import 'partial';
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+1) DTD :- 
+
+2) difference btw previous and html DOCTYPE ? 
+
+3) SGML :-
+
+4) Omitting <head> tag ?
+
+5) Type of language understood by browser ?
+
+6) htmlshiv file ?
+
+7) conditional statement inside <head> tag ?
+
+8) Web Crawler ? Working ?
+
+9) canvas and image type ?
+
+10) SVG :-
+
+11) <mark>....</mark> , <time>....</time> , <main>....</main>
+
+12) DOM :-
+
+	WINDOW
+	 - document
+	 - history
+	 - location
+	 - storage
+
+13) local storage and session storage ?
+
+14) Web Workers ?
+
+
+
+
+
+
+
+
+function foo(){						// 8 overides 3 due to function hoisting.
+                function bar(){
+                    alert (3);
+                }
+                bar();
+                function bar(){
+                    alert (8);
+                }
+            }
+            foo();
+
+
+function foo(){						// 3 as function hoisting does not happen for Expression.
+	var bar = function(){
+		return 3;
+		}
+	bar();
+	var bar = function(){
+		return 8;
+		}
+	}
+	foo();
+
+
+
+
+
+** STRICT MODE:-
+-------------------
+
+1) var must be used for declairation.
+	a = 5 ;  	//ERROR
+	var a = 5 ;	//CORRECT
+
+
+2) Duplicate Parameters are not allowed in function.
+
+3) delete a; is not allowed in strict mode.
+
+
+ Q.  A given 2 int which can be +ve or -ve . Find sum of all numbers including them too and return it . If both number are equal then return a or b ?
+	
+ Q.  Anagram ?
+
+ Q.  Write a function dash that will insert dash(-) between each two odd numberin that number ? 4934 = 49-34
+
+
+
+** CLOSURE :-
+--------------------
+
+
+-- Function returning another function . In this case inner function can access
+
+function nameMaker(fname , lname){
+	function addName()
+	{
+		return(fname+lname);
+	}	
+	return addName();
+}
+
+makeName("abc","xyz");
+
+
+
+Q. Calculate the sum of all the arguments passed to a function.
+
+Note: If any of the arguments is not a finite number the function should return false/False instead of the sum of the arguments.
+
+For example:
+
+sum(1,2,3,4)         should return 10
+sum(1, “two”, 3)     should return false
+sum(1, 2, [3], NaN)  should return false
+
+
+Q. Alex just got a new hula hoop, he loves it but feels discouraged because his little brother is better than him
+
+Write a program where Alex can input (n) how many times the hoop goes round and it will return him an encouraging message :slightly_smiling_face:
+
+-If Alex gets 10 or more hoops, return the string “Great, now move on to tricks”.
+
+-If he doesn’t get 10 hoops, return the string “Keep at it until you get it”.
+

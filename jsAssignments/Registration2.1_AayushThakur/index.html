@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Employee Registration</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Employee Registration Portal</h1>
+        </header>
+        <p id="error-area"></p>
+        <form id="form"> 
+            <h2>Personal Information</h2>
+            <section class="contentInfo">
+                <div class="row">
+                    <label>First Name : </label>
+                    <input class="getValue" type="text" id="fName" name="First Name" placeholder="First Name" autofocus>
+                    <label class="right">Last Name : </label>
+                    <input class="getValue" type="text" id="lName" name="Last Name" placeholder="Last Name">
+                </div>
+                
+                <div class="row">
+                    <label>Gender : </label>
+                    <input class="genderValue" type="radio" name="Gender" value="M">Male
+                    <input class="genderValue" type="radio" name="Gender" value="F">Female  
+                    <label class="right-align">Age : </label>
+                    <input type="number" class="getValue" id="age" name="Age" placeholder="Age">
+                </div>
+                <div class="row">
+                    <label>Email ID : </label>
+                    <input class="getValue" id="emailId" type="email" name="Email" placeholder="Email">
+                    <label class="right">Mobile Number : </label>
+                    <input id="mobile" class="getValue" type="tel" name="Mobile"  placeholder="Mobile Number">
+                </div>
+                <div class="row">
+                    <label class="textarea-align">Address : </label>
+                    <textarea class="getValue" rows="2" name="Address" placeholder="Residential Address"></textarea>
+                    <label class="right textarea-align">Pin Code : </label>
+                    <input id="pinCode" class="textarea-align getValue" type="text" name="Pin Code" placeholder="Pin Code">
+                </div>
+                <div class="row">
+                    <label>Image : </label>
+                    <input class="getValue" type="file" name="Image">
+                </div>
+            </section>
+            <h2>Academic Details</h2>
+            <section class="contentInfo">
+                <div class="row">
+                    <label class="middle">Institute Name</label>
+                    <label class="right">Board / University</label>
+                    <label class="right">Percentage</label>
+                </div>
+                <div class="row">
+                    <label>SSC : </label>
+                    <input class="getValue" type="text" name="SSC Institute">
+                    <input class="align getValue" type="text" name="SSC University">
+                    <input class="align getValue" id="ssc" type="number" name="SSC Percentage" min="0" max="100">
+                </div>
+                <div class="row">
+                    <label>HSC : </label>
+                    <input class="getValue" type="text" name="HSC Institute">
+                    <input class="align getValue" type="text" name="HSC University">
+                    <input class="align getValue" id="hsc" type="number" name="HSC Percentage" min="0" max="100"> 
+                </div>
+                <div class="row" id="Diploma">
+                    <input type="checkbox" id="diplomaLabel" name="diploma"><label class="check">Diploma</label>
+                </div>
+                <div class="row" id="Graduation">
+                    <input type="checkbox" id="graduationLabel" name="graduation"><label class="check">Graduation</label>
+                </div>
+                <div class="row" id="PostGraduation">
+                    <input type="checkbox" id="postGraduationLabel" name="postGraduation"><label class="check">Post Graduation</label>
+                </div>
+            </section>
+            <h2>Skills</h2>
+            <section class="contentInfo">
+                <div class="row">
+                    <label>Technical : </label>
+                    <input class="getValue Skills" type="text" name="technicalSkills" placeholder="Technical Skills">
+                    <label class="right">Non-Technical : </label>
+                    <input class="getValue Skills" type="text" name="nonTecnicalSkills" placeholder="Non-Technical Skills">
+                </div>
+            </section>
+            <h2>Experience</h2>
+            <section class="contentInfo">
+                <div class="row">
+                    <label class="left">Company Name</label>
+                    <label class="right">Year Of Joining</label>
+                    <label class="right">Years Of Experience</label>
+                </div>
+                <div class="row">
+                    <input class="right getValue" type="text" name="companyName">
+                    <input id="joiningYear" class="align getValue" type="text" name="yearOfJoining">
+                    <input id="exp" class="align getValue" type="number" name="Experience">
+                </div>
+            </section>
+            <fieldset><button type="submit" >Register</button></fieldset>
+        </form>
+
+        <script src="./script/myScript.js"></script>
+    </body>
+</html>

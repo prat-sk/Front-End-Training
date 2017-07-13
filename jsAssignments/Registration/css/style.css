@@ -1,0 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+body{
+  background: url("../images/background-image.jpg") no-repeat 0px 0px / cover;
+  color: #fff;
+  font-size: 18px;
+}
+h1{
+  text-align: center;
+  font-size: 30px;
+  margin: 50px auto 0px;
+}
+button{
+  border: none;
+  border-radius: 5px 5px;
+  padding: 5px 10px;
+  box-shadow: 2px 3px 10px #888888;
+  background-color:#0000ff;
+  color: #fff; 
+  margin-top: 20px;
+}
+form{
+  width: 40%;
+  margin: 20px auto;
+  padding: 20px; 
+}
+table{
+  width: 100%;
+}
+caption{
+  color: #000;  
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+thead{
+  color: #000;
+  font: italic 14px arial;
+  text-align: center;
+}
+textarea{
+  width: 168px;
+}
+td{
+  text-align: center;
+}
+.labels{
+  text-align: right;
+} 
+.next{
+  text-align: center;
+}
+#academic-details,#skills,#experience,#grade,#pGrade,#diplo{
+  display: none;
+}

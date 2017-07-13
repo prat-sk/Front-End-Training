@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Assignment 1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            label{
+                margin-left: 100px;
+                margin-right: 10px;
+            }
+            button{
+                display: block;
+                margin-top: 20px;
+                margin-left: 150px;
+            }
+            p{
+                margin-top: 20px;
+                margin-left: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <label>Number 1</label><input type="text" id="num1">
+        <label>Number 2</label><input type="text" id="num2"><button onclick="generateSum()">Generate Sum</button>
+        <p></p>
+        <script>
+            function generateSum()
+            {
+                var num1 = Number(document.getElementById("num1").value);
+                var num2 = Number(document.getElementById("num2").value);
+                var para = document.querySelector("p");
+                var sum = 0; 
+                para.textContent = " ";
+                if(num1 === num2)
+                {
+                    para.textContent = "Sum : "+num1;
+                }
+                else if(num1 > num2)
+                {
+                    for(var i=num2 ; i <= num1 ; i++)
+                    {
+                        sum += i;
+                    }
+                    para.textContent = "Sum : "+sum;
+                }
+                else
+                {
+                    for(var i=num1 ; i <= num2 ; i++)
+                    {
+                        sum += i;
+                    }
+                    para.textContent = "Sum : "+sum;
+                }
+            }
+        </script>
+    </body>
+</html>

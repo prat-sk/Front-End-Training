@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Employee Registration</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Employee Registration Portal</h1>
+        </header>
+        <p id="error-area"></p>
+        <form onsubmit="return objectCreation()"> 
+            <h2>Personal Information</h2>
+            <section class="contentInfo">
+                <div class="row">
+                    <label>First Name : </label>
+                    <input onblur="textValidation(this)" class="getValue" type="text" id="fName" name="First-Name" placeholder="First Name" autofocus >
+                    <label class="right">Last Name : </label>
+                    <input onblur="textValidation(this)" class="getValue" type="text" id="lName" name="Last-Name" placeholder="Last Name">
+                </div>
+                
+                <div class="row">
+                    <label>Gender : </label>
+                    <input class="genderValue" type="radio" name="gender" value="M">Male
+                    <input class="genderValue" type="radio" name="gender" value="F">Female  
+                    <label class="right-align">Age : </label>
+                    <input onblur="ageValidate(this)" type="number" class="getValue" id="age" name="Age" placeholder="Age">
+                </div>
+                <div class="row">
+                    <label>Email ID : </label>
+                    <input class="getValue" type="email" name="email" placeholder="Email">
+                    <label class="right">Mobile Number : </label>
+                    <input onblur="mobileValidation(this)" id="mobile" class="getValue" type="tel" name="Mobile"  placeholder="Mobile Number">
+                </div>
+                <div class="row">
+                    <label class="textarea-align">Address : </label>
+                    <textarea class="getValue" rows="2" name="address" placeholder="Residential Address"></textarea>
+                    <label class="right textarea-align">Pin Code : </label>
+                    <input onblur="pinValidation(this)" id="Pin-Code" class="textarea-align getValue" type="text" name="Pin-Code" placeholder="Pin Code">
+                </div>
+            </section>
+            <h2>Academic Details</h2>
+            <section class="contentInfo">
+                <div class="row">
+                    <label class="middle">Institute Name</label>
+                    <label class="right">University Name</label>
+                    <label class="right">Percentage</label>
+                </div>
+                <div class="row">
+                    <label>SSC : </label>
+                    <input class="getValue" type="text" name="sscInstitute">
+                    <input class="align getValue" type="text" name="sscUniversity">
+                    <input onblur="percentValidation(this)" class="align getValue" id="ssc" type="number" name="SSC-Percentage" min="0" max="100">
+                </div>
+                <div class="row">
+                    <label>HSC : </label>
+                    <input class="getValue" type="text" name="hscInstitute">
+                    <input class="align getValue" type="text" name="hscUniversity">
+                    <input onblur="percentValidation(this)" class="align getValue" id="hsc" type="number" name="HSC-Percentage" min="0" max="100"> 
+                </div>
+                <div class="row" id="diploma">
+                    <input type="checkbox" id="diplomaLabel"><label class="check">Diploma</label>
+                </div>
+                <div class="row" id="graduation">
+                    <input type="checkbox" id="graduationLabel"><label class="check">Graduation</label>
+                </div>
+                <div class="row" id="postGraduation">
+                    <input type="checkbox" id="postGraduationLabel"><label class="check">Post Graduation</label>
+                </div>
+            </section>
+            <h2>Skills</h2>
+            <section class="contentInfo">
+                <div class="row">
+                    <label>Technical : </label>
+                    <input class="getValue" type="text" name="technicalSkills" placeholder="Technical Skills">
+                    <label class="right">Non-Technical : </label>
+                    <input class="getValue" type="text" name="nonTecnicalSkills" placeholder="Non-Technical Skills">
+                </div>
+            </section>
+            <h2>Experience</h2>
+            <section class="contentInfo">
+                <div class="row">
+                    <label class="left">Company Name</label>
+                    <label class="right">Date Of Joining</label>
+                    <label class="right">Years Of Experience</label>
+                </div>
+                <div class="row">
+                    <input class="right getValue" type="text" name="companyName">
+                    <input class="align getValue" type="text" name="dateOfJoining">
+                    <input onblur="expValidate(this)" id="exp" class="align getValue" type="number" name="Experience">
+                </div>
+            </section>
+            <fieldset><button type="submit">Register</button></fieldset>
+        </form>
+
+        <script src="./script/myScript.js"></script>
+    </body>
+</html>

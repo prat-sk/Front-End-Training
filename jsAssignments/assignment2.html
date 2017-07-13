@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Assignment 2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            label{
+                margin-left: 100px;
+                margin-right: 10px;
+            }
+            button{
+                display: block;
+                margin-top: 20px;
+                margin-left: 150px;
+            }
+            p{
+                margin-top: 20px;
+                margin-left: 100px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <label>Number 1</label><input type="text" id="num1">
+        <label>Number 2</label><input type="text" id="num2"><button onclick="check()">Check</button>
+        <p></p>
+
+        <script>
+            function check(){
+                var numLength1 = document.getElementById("num1").value.length;
+                var numLength2 = document.getElementById("num2").value.length;
+                var para = document.querySelector("p");
+                para.textContent = " ";
+                if(numLength1 === numLength2)
+                {
+                    var num1 = Number(document.getElementById("num1").value);
+                    var num2 = Number(document.getElementById("num2").value);
+                    var arr = [];
+                    while(numLength1 != 0)
+                    {
+                        arr.unshift(num1%10);
+                        num1 = Math.floor(num1/10);
+                        numLength1--;
+                    }
+                    while(numLength2 != 0)
+                    {
+                        var temp = num2%10;
+                        var index = arr.indexOf(temp);
+                        if(index != -1)
+                        {
+                            arr.splice(index,1);
+                        }
+                        num2 = Math.floor(num2/10);
+                        numLength2--;
+                    }
+                    if(arr.length == 0)
+                        para.textContent = "Anagram.";
+                    else
+                        para.textContent = "Not an Anagram.";
+                }
+                else
+                {
+                    para.textContent = "Not an Anagram.";
+                }
+            }
+        </script>
+
+    </body>
+</html>

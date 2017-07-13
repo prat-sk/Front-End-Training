@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Assignment 5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            label{
+                margin-left: 100px;
+                margin-right: 10px;
+            }
+            button{
+                display: block;
+                margin-top: 20px;
+                margin-left: 150px;
+            }
+            p{
+                margin-top: 20px;
+                margin-left: 100px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <label>Input </label><input type="text" id="num">
+        <button onclick="appriciate(num)">Get Results</button>
+        <p></p>
+
+        <script>
+            var hoops = Number(document.querySelector("input").value);
+            var para = document.querySelector("p");
+            para.textContent = "";
+            
+            function appriciate(numberOfHoops)
+            {
+                function check(){
+                    (numberOfHoops.value >= 10) ? para.textContent =  "Great now move on to tricks." 
+                                            : para.textContent = "Keep it untill you get it.";
+                }
+                return check();
+            }
+            
+            /*  Annonymous Function
+            window.onload = function(){
+                alert("hi amruta");
+            }
+            */
+            /*
+            var cube =[];
+            function check(){
+                for(var i=0;i<arguments.length;i++)
+                {
+                    cube[i] = cubes(arguments[i]);
+                }
+                cube.forEach(function(ele) {
+                    console.log(ele);
+                }, this);
+            }
+            function cubes(num){
+                    return num*num*num;
+            }
+            check(1,2,3,4);
+            */
+        </script>
+
+    </body>
+</html>
